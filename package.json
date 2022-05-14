@@ -21,7 +21,7 @@
   "homepage": "https://github.com/WollenMoth/artisanal-fishing-api#readme",
   "engines": {
     "node": "16.14.2",
-    "npm": "8.5.0"
+    "npm": "^8.5.0"
   },
   "dependencies": {
     "express": "^4.18.1"
