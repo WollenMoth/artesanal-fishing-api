@@ -14,5 +14,6 @@ module.exports = {
         "linebreak-style": ["error", "unix"],
         quotes: ["error", "double"],
         semi: ["error", "always"],
+        "no-multiple-empty-lines": ["error", { max: 1 }],
     },
 };
