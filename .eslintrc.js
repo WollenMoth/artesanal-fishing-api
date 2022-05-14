@@ -1,0 +1,19 @@
+module.exports = {
+    env: {
+        node: true,
+        commonjs: true,
+        es2021: true,
+        jest: true,
+    },
+    extends: "eslint:recommended",
+    parserOptions: {
+        sourceType: "module",
+        ecmaVersion: "latest",
+    },
+    rules: {
+        indent: ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        quotes: ["error", "double"],
+        semi: ["error", "always"],
+    },
+};
