@@ -3,7 +3,6 @@ const prisma = new PrismaClient();
 
 (async function main() {
     try {
-      
         const Captain = await prisma.Captain.upsert({
             where: { id: 1 },
             update: {},
@@ -35,9 +34,7 @@ const prisma = new PrismaClient();
                 zarpe: "Manzanillo, Colima, Mexico"
             },
         });
-  
-  
-        console.log("Create 3 explorers");
+
     } catch(e) {
         console.error(e);
         process.exit(1);
