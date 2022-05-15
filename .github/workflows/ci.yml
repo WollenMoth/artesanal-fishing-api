@@ -34,7 +34,7 @@ jobs:
       - name: Connect to Postgres
         run: psql -c "CREATE DATABASE ci_test;"
         env:
-          PGHOST: Postgres
+          PGHOST: localhost
           PGUSER: postgres
           PGPASSWORD: postgres
           PGPORT: 5432
