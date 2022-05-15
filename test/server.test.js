@@ -178,6 +178,7 @@ describe("Unit Tests for the Boats API", () => {
         const res = await http.post("/api/v1/boats").send({
             idCaptain: 1,
             idCompany: 1,
+            name: "Boat",
             fishingLocation: "35.019928, -40.575989",
             capture: "Tuna",
             zarpe: "Boca del Río, Veracruz, México",
@@ -197,6 +198,7 @@ describe("Unit Tests for the Boats API", () => {
         const res = await http.put(`/api/v1/boats/${id}`).send({
             idCaptain: 1,
             idCompany: 1,
+            name: "Bote",
             fishingLocation: "-40.575989, 35.019928",
             capture: "Atún",
             zarpe: "Boca del Río, Veracruz, México",

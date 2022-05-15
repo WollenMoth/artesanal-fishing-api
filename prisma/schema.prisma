@@ -28,6 +28,7 @@ model Boat {
   company         Company  @relation(fields: [idCompany], references: [id])
   idCaptain       Int
   idCompany       Int
+  name            String   @db.VarChar(255)
   fishingDate     DateTime @default(now()) @db.Timestamp(1)
   fishingLocation String   @db.VarChar(255)
   capture         String   @db.Text

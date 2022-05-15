@@ -28,6 +28,7 @@ const prisma = new PrismaClient();
             create: {
                 idCaptain: 1,
                 idCompany: 1,
+                name: "Bote 1",
                 fishingLocation: "-23.456453424234, 34.4545423",
                 capture: "Salmon rojo",
                 zarpe: "Manzanillo, Colima, Mexico",
