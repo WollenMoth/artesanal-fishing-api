@@ -13,6 +13,12 @@ test("GET /api/v1", async () => {
     expect(res.body.message).toMatch(/welcome/i);
 });
 
+test("Redirects to /api/v1", async () => {
+    const res = await http.get("/");
+
+    expect(res.status).toBe(302);
+});
+
 describe("Unit Tests for the Captains API", () => {
     let id;
 
