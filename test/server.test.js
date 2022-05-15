@@ -1,9 +1,9 @@
 const supertest = require("supertest");
-const app = require("../lib/server");
-const http = supertest(app);
+const server = require("../lib/server");
+const http = supertest(server);
 
 afterAll(() => {
-    app.close();
+    server.close();
 });
 
 test("GET /api/v1", async () => {

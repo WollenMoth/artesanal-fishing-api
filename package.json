@@ -2,9 +2,9 @@
   "name": "artisanal-fishing-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/server.js",
   "scripts": {
-    "server": "node index.js",
+    "server": "node lib/server.js",
     "migrate": "npx prisma migrate dev --name init",
     "seed": "node prisma/seed.js",
     "test": "jest --passWithNoTests",
