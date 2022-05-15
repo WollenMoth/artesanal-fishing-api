@@ -39,7 +39,8 @@ jobs:
         run: |
           npm run migrate
           npm run seed
-        env: DATABASE_URL="postgresql://postgres:postgres@Postgres:5432/ci_test?schema=public"
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@Postgres:5432/ci_test?schema=public
 
       - name: 🧪 Run tests
         run: npm test
