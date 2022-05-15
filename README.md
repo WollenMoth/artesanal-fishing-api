@@ -26,7 +26,8 @@ Crear a un capitán.
 
 #### BODY raw
 
-```{
+```
+{
     "name": String,
     "email": String,
     "country": String,
@@ -42,7 +43,8 @@ Actualizar a un capitán por su id.
 
 #### BODY raw
 
-```{
+```
+{
     "name": String,
     "email": String,
     "country": String,
@@ -78,7 +80,8 @@ Crear a una empresa.
 
 #### BODY raw
 
-```{
+```
+{
     "name": String
 }
 ```
@@ -91,7 +94,8 @@ Actualizar a una empresa por su id.
 
 #### BODY raw
 
-```{
+```
+{
     "name": String
 }
 ```
@@ -126,7 +130,8 @@ Crear a un bote de pesca.
 
 #### BODY raw
 
-```{
+```
+{
     "idCaptain": Int,
     "idCompany": Int,
     "name": String,
@@ -145,7 +150,8 @@ Actualizar a un bote de pesca por su id.
 
 #### BODY raw
 
-```{
+```
+{
     "idCaptain": Int,
     "idCompany": Int,
     "name": String,
@@ -186,7 +192,8 @@ Crear a una propuesta.
 
 #### BODY raw
 
-```{
+```
+{
     "name": String,
     "email": String,
     "phone": String,
@@ -202,7 +209,8 @@ Actualizar a una propuesta por su id.
 
 #### BODY raw
 
-```{
+```
+{
     "name": String,
     "email": String,
     "phone": String,
