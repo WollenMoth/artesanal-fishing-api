@@ -33,3 +33,11 @@ model Boat {
   capture         String   @db.Text
   zarpe           String   @db.VarChar(255)
 }
+
+model Propuesta{
+  id        Int     @id @default(autoincrement())
+  name      String  @db.VarChar(255)
+  email     String  @db.VarChar(255)
+  phone     String  @db.VarChar(255)
+  proposal  String  @db.Text
+}

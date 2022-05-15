@@ -33,6 +33,16 @@ const prisma = new PrismaClient();
                 zarpe: "Manzanillo, Colima, Mexico",
             },
         });
+
+        await prisma.Propuesta.create({
+            data: {
+                name: "Usuario",
+                email: "example@example.com",
+                phone: "111 111 1111",
+                proposal:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ornare lorem, sit amet hendrerit nibh semper et.",
+            },
+        });
     } catch (e) {
         console.error(e);
         process.exit(1);
