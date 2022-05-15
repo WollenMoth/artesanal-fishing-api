@@ -39,6 +39,8 @@ jobs:
 
       - name: 🧪 Run tests
         run: npm test
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/ci_test?schema=public
 
       - name: 📝 Run linter
         run: npm run lint
