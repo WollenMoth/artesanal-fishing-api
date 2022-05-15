@@ -34,7 +34,7 @@ const prisma = new PrismaClient();
             },
         });
 
-        await prisma.Propuesta.create({
+        await prisma.Proposal.create({
             data: {
                 name: "Usuario",
                 email: "example@example.com",

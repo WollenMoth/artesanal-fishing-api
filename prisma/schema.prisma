@@ -34,7 +34,7 @@ model Boat {
   zarpe           String   @db.VarChar(255)
 }
 
-model Propuesta{
+model Proposal {
   id        Int     @id @default(autoincrement())
   name      String  @db.VarChar(255)
   email     String  @db.VarChar(255)
