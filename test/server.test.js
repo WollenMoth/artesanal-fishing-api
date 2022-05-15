@@ -13,7 +13,7 @@ test("GET /api/v1", async () => {
     expect(res.body.message).toMatch(/welcome/i);
 });
 
-describe("Unit Tests for Captains API", () => {
+describe("Unit Tests for the Captains API", () => {
     let id;
 
     test("GET /api/v1/captains", async () => {
@@ -91,7 +91,7 @@ describe("Unit Tests for Captains API", () => {
     });
 });
 
-describe("Unit Tests for Companies API", () => {
+describe("Unit Tests for the Companies API", () => {
     let id;
 
     test("GET /api/v1/companies", async () => {
