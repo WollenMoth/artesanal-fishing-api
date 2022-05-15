@@ -4,6 +4,17 @@ jobs:
   test:
     name: 🎉 Tests and Linters
     runs-on: ubuntu-latest
+    container: node:16.14.2
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     steps:
       - name: 🚚 Get the latest code
         uses: actions/checkout@v3
@@ -15,6 +26,20 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Connect to Postgres
+        run: psql -c "CREATE DATABASE ci_test;"
+        env:
+          PGHOST: Postgres
+          PGUSER: postgres
+          PGPASSWORD: postgres
+          PGPORT: 5432
+
+      - name: Run migrations and seed database
+        run: |
+          npm run migrate
+          npm run seed
+        env: DATABASE_URL="postgresql://postgres:postgres@Postgres:5432/ci_test?schema=public"
 
       - name: 🧪 Run tests
         run: npm test
