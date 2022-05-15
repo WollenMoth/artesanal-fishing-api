@@ -4,7 +4,6 @@ jobs:
   test:
     name: 🎉 Tests and Linters
     runs-on: ubuntu-latest
-    container: node:16.14.2
     services:
       postgres:
         image: postgres
