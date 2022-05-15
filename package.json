@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "node index.js",
+    "migrate": "npx prisma migrate dev --name init",
     "seed": "node prisma/seed.js",
     "test": "jest --passWithNoTests",
     "lint": "eslint .",
