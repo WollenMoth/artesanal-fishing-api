@@ -221,3 +221,12 @@ Actualizar a una propuesta por su id.
 ### DEL /proposals/:id
 
 Eliminar a una propuesta por su id.
+
+## Dependencias
+
+- [Express](https://expressjs.com/): Creación del servidor
+- [cors](https://www.npmjs.com/package/cors): Configuración de CORS
+- [Prisma](https://www.npmjs.com/package/@prisma/client): Gestión de la base de datos
+- [Jest](https://jestjs.io/): Pruebas unitarias
+- [Supertest](https://www.npmjs.com/package/supertest): Pruebas HTTP en Jest
+- [ESLint](https://eslint.org/): Linting de código
