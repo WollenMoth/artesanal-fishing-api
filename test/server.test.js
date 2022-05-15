@@ -238,3 +238,87 @@ describe("Unit Tests for the Boats API", () => {
         expect(res.body.message).toMatch(/no se ha podido eliminar/i);
     });
 });
+
+describe("Unit Tests for the Proposals API", () => {
+    let id;
+
+    test("GET /api/v1/proposals", async () => {
+        const res = await http.get("/api/v1/proposals");
+
+        expect(res.status).toBe(200);
+        expect(res.body).toBeDefined();
+    });
+
+    test("GET /api/v1/proposals/:id", async () => {
+        const res = await http.get("/api/v1/proposals/1");
+
+        expect(res.status).toBe(200);
+        expect(res.body).toBeDefined();
+    });
+
+    test("POST /api/v1/proposals", async () => {
+        const res = await http.post("/api/v1/proposals").send({
+            name: "User",
+            email: "user@domain.com",
+            phone: "111 111 1111",
+            proposal:
+                "Donec eget ligula rhoncus, pharetra dolor id, viverra orci. Pellentesque imperdiet sagittis risus sit amet.",
+        });
+
+        expect(res.status).toBe(201);
+        expect(res.body.name).toBe("User");
+        expect(res.body.email).toBe("user@domain.com");
+        expect(res.body.phone).toBe("111 111 1111");
+        expect(res.body.proposal).toBe(
+            "Donec eget ligula rhoncus, pharetra dolor id, viverra orci. Pellentesque imperdiet sagittis risus sit amet."
+        );
+
+        id = res.body.id;
+    });
+
+    test("PUT /api/v1/proposals/:id", async () => {
+        const res = await http.put(`/api/v1/proposals/${id}`).send({
+            name: "Usuario",
+            email: "usuario@dominio.com",
+            phone: "555 555 5555",
+            proposal:
+                "Ut blandit urna et odio pellentesque, eu maximus dolor scelerisque. Duis ac risus pharetra, vulputate.",
+        });
+
+        expect(res.status).toBe(200);
+        expect(res.body.name).toBe("Usuario");
+        expect(res.body.email).toBe("usuario@dominio.com");
+        expect(res.body.phone).toBe("555 555 5555");
+        expect(res.body.proposal).toBe(
+            "Ut blandit urna et odio pellentesque, eu maximus dolor scelerisque. Duis ac risus pharetra, vulputate."
+        );
+    });
+
+    test("DELETE /api/v1/proposals/:id", async () => {
+        const res = await http.delete(`/api/v1/proposals/${id}`);
+
+        expect(res.status).toBe(200);
+        expect(res.body.message).toMatch(/eliminada/i);
+    });
+
+    test("Invalid POST /api/v1/proposals", async () => {
+        const res = await http.post("/api/v1/proposals").send({});
+
+        expect(res.status).toBe(400);
+        expect(res.body.message).toMatch(/no se ha podido crear/i);
+    });
+
+    test("Invalid PUT /api/v1/proposals/:id", async () => {
+        const res = await http.put("/api/v1/proposals/1234").send({});
+
+        expect(res.status).toBe(400);
+        expect(res.body.message).toMatch(/no se ha podido actualizar/i);
+    });
+
+    test("Invalid DELETE /api/v1/proposals/:id", async () => {
+        const res = await http.delete("/api/v1/proposals/1234");
+
+        expect(res.status).toBe(400);
+        expect(res.body.message).toMatch(/no se ha podido eliminar/i);
+    });
+});
