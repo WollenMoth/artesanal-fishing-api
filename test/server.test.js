@@ -2,6 +2,10 @@ const supertest = require("supertest");
 const app = require("../lib/server");
 const http = supertest(app);
 
+afterAll(() => {
+    app.close();
+});
+
 test("GET /api/v1", async () => {
     const res = await http.get("/api/v1");
 
@@ -33,13 +37,13 @@ describe("Unit Tests for Captains API", () => {
             country: "Mexico",
             state: "Colima",
         });
-        
+
         expect(res.status).toBe(201);
         expect(res.body.name).toBe("Captain");
         expect(res.body.email).toBe("captain@domain.com");
         expect(res.body.country).toBe("Mexico");
         expect(res.body.state).toBe("Colima");
-        
+
         id = res.body.id;
     });
 
