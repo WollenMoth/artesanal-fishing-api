@@ -3,7 +3,9 @@
 La Artisanal Fishing API permite obtener, crear y eliminar capitanes, empresas y botes de pesca.
 
 ## Modelo Entidad-Relación 
-![Diagrama ER](https://user-images.githubusercontent.com/54995852/168509979-432c3961-bf20-46b8-ab56-9e8d24379fdc.png)
+
+![Diagrama ER de base de datos (pata de gallo) (1)](https://user-images.githubusercontent.com/54995852/168510333-594f353c-af14-4337-88c3-5d61a20efaa7.png)
+
 
 
 ## Captains
