@@ -23,7 +23,7 @@
   "homepage": "https://github.com/WollenMoth/artisanal-fishing-api#readme",
   "engines": {
     "node": "16.14.2",
-    "npm": "^8.5.0"
+    "npm": "^8.15.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
