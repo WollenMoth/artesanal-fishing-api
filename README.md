@@ -14,19 +14,19 @@ La Captains API permite obtener, crear y eliminar capitanes.
 
 ### GET /captains
 
-`localhost:8000/api/v1/captains`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/captains`
 
 Obtener a todos los capitanes.
 
 ### GET /captains/:id
 
-`localhost:8000/api/v1/captains/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/captains/:id`
 
 Obtener a un capitán por su id.
 
 ### POST /captains
 
-`localhost:8000/api/v1/captains`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/captains`
 
 Crear a un capitán.
 
@@ -43,7 +43,7 @@ Crear a un capitán.
 
 ### PUT /captains/:id
 
-`localhost:8000/api/v1/captains/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/captains/:id`
 
 Actualizar a un capitán por su id.
 
@@ -60,7 +60,7 @@ Actualizar a un capitán por su id.
 
 ### DEL /captains/:id
 
-`localhost:8000/api/v1/captains/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/captains/:id`
 
 ## Companies
 
@@ -68,19 +68,19 @@ La Companies API permite obtener, crear y eliminar empresas.
 
 ### GET /companies
 
-`localhost:8000/api/v1/companies`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/companies`
 
 Obtener a todas las empresas.
 
 ### GET /companies/:id
 
-`localhost:8000/api/v1/companies/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/companies/:id`
 
 Obtener a una empresa por su id.
 
 ### POST /companies
 
-`localhost:8000/api/v1/companies`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/companies`
 
 Crear a una empresa.
 
@@ -94,7 +94,7 @@ Crear a una empresa.
 
 ### PUT /companies/:id
 
-`localhost:8000/api/v1/companies/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/companies/:id`
 
 Actualizar a una empresa por su id.
 
@@ -108,7 +108,7 @@ Actualizar a una empresa por su id.
 
 ### DEL /companies/:id
 
-`localhost:8000/api/v1/companies/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/companies/:id`
 
 Eliminar a una empresa por su id.
 
@@ -118,19 +118,19 @@ La Boats API permite obtener, crear y eliminar botes de pesca.
 
 ### GET /boats
 
-`localhost:8000/api/v1/boats`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/boats`
 
 Obtener a todos los botes de pesca.
 
 ### GET /boats/:id
 
-`localhost:8000/api/v1/boats/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/boats/:id`
 
 Obtener a un bote de pesca por su id.
 
 ### POST /boats
 
-`localhost:8000/api/v1/boats`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/boats`
 
 Crear a un bote de pesca.
 
@@ -150,7 +150,7 @@ Crear a un bote de pesca.
 
 ### PUT /boats/:id
 
-`localhost:8000/api/v1/boats/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/boats/:id`
 
 Actualizar a un bote de pesca por su id.
 
@@ -170,7 +170,7 @@ Actualizar a un bote de pesca por su id.
 
 ### DEL /boats/:id
 
-`localhost:8000/api/v1/boats/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/boats/:id`
 
 Eliminar a un bote de pesca por su id.
 
@@ -180,19 +180,19 @@ La Proposals API permite obtener, crear y eliminar propuestas.
 
 ### GET /proposals
 
-`localhost:8000/api/v1/proposals`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/proposals`
 
 Obtener a todas las propuestas.
 
 ### GET /proposals/:id
 
-`localhost:8000/api/v1/proposals/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/proposals/:id`
 
 Obtener a una propuesta por su id.
 
 ### POST /proposals
 
-`localhost:8000/api/v1/proposals`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/proposals`
 
 Crear a una propuesta.
 
@@ -209,7 +209,7 @@ Crear a una propuesta.
 
 ### PUT /proposals/:id
 
-`localhost:8000/api/v1/proposals/:id`
+`https://artisanal-fishing-api.herokuapp.com/api/v1/proposals/:id`
 
 Actualizar a una propuesta por su id.
 
