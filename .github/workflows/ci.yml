@@ -1,5 +1,5 @@
 name: 🚀 Continuous Integration
-on: [pull_request, workflow_call]
+on: [pull_request, push]
 jobs:
   test:
     name: 🎉 Tests and Linters
